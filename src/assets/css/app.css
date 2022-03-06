@@ -1,9 +1,11 @@
 .app {
   text-align: center;
+  font-size: 1.5rem;
 }
 
-header {
+.app-header {
   margin-top: -5rem;
+  z-index: 10;
 }
 
 .container {
@@ -20,23 +22,11 @@ a:hover{
   transform: scale(1.2);
 }
 
-.app_text {
+/* .app_text {
   opacity: 1;
   transition: 0.1s all ease-in-out;
-}
+} */
 
-.app_text_title {
-  font-weight: 700;
-  font-size: 3.5rem;
-  letter-spacing: 0.5rem;
-  margin-top: 12rem;
-}
-
-.app_text_body {
-  font-weight: 600;
-}
-
-/* ////////// customize upward */
 .app-title {
   font-size: 10rem;
   font-weight: bold;
@@ -65,7 +55,7 @@ a:hover{
   justify-content: center;
 }
 
-.btn {
+.custom-btn {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 1rem;
@@ -74,12 +64,12 @@ a:hover{
   margin-bottom: 1rem;
 }
 
-.btn-primary {
+.custom-btn-primary {
   background: rgba(23, 26, 42, 0.8);
   color: white;
 }
 
-.btn-secondary {
+.custom-btn-secondary {
   background: rgba(255, 255, 255, 0.65);
   color: var(--primary-color);
 }

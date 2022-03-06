@@ -5,21 +5,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home';
 import Dashboard from './pages/dashboard'
 import NotFound from './pages/notFound'
+import AddClient from './pages/addClient';
+import AllClients from './pages/allClients';
 
 function App() {
   return (
-   
-    <BrowserRouter>
-     <div className='app'>
 
-      <Routes>   
+    <BrowserRouter>
+      <div className='app'>
+
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="*" element={<NotFound />} /> 
-
-      </Routes>
+          <Route path="add-client" element={<AddClient />} />
+          <Route path="all-clients" element={<AllClients />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
-    </BrowserRouter> 
+    </BrowserRouter>
 
   );
 }
