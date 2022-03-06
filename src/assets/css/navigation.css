@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+                  # NAVBAR
+--------------------------------------------------------------*/
+.navbar {
+    width: 100vw;
+    /* text-shadow: 1px 1px 1px var(--secondary-color); */
+    font-weight: 700;
+  }
+  .active {
+    border-radius: 0 0.7rem;
+    box-shadow: 0 -2px 2px var(--secondary-color), 0 2px 2px var(--secondary-color);
+  }
+  .nav-link{
+      margin-left: 1rem;
+      /* border-bottom: 1px solid #ced4da; */
+      text-transform: capitalize;
+  }
