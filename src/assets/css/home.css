@@ -1,3 +1,7 @@
-p {
+.tagline {
     text-transform: capitalize;
+}
+
+.custom-btn:hover{
+    color: white;
 }

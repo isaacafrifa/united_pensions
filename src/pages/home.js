@@ -12,8 +12,8 @@ const Home = () => {
                 <section className='app-header'>
                     <h1 className='app-title'>ail</h1>
                     <p className='app-subtitle'>agyenkwa investment limited</p>
-                    <p>more than just an investment</p>
-                    <div class="button-container">
+                    <p className='tagline'>more than just an investment</p>
+                    <div className="button-container">
                         <Link to="dashboard" className="custom-btn custom-btn-primary">dashboard</Link>
                     </div>
                 </section>

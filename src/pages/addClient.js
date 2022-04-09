@@ -1,9 +1,13 @@
 import ClientForm from "../components/clientForm";
+import Navigation from "../components/navigation";
 
 const AddClient = () => {
     return (
-        <div>         
+        <div>   
+           <Navigation />   
+           <section className='container' style={{ marginTop: "-5rem" }}>   
            <ClientForm/>
+           </section>
         </div>
     );
 }

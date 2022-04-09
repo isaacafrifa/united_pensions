@@ -1,0 +1,18 @@
+#client-form {
+    max-width: 80%;
+    text-align: left;
+}
+
+#form_name,
+#form_salary,
+#form_rate {
+    font-size: 1.6rem;
+}
+
+#form_button {
+    font-size: 1.6rem;
+}
+
+.asterisks, .form-error, #errorToast{
+    color: brown;
+}
