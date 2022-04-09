@@ -14,40 +14,74 @@ xl=1600 */
     .button-container {
         justify-content: space-evenly;
     }
+
+    .card {
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+
+    #client-form {
+        width: 70%;
+    }
+
+    #investment-form{
+        margin-left: 6.5rem;
+        max-width: 85%;
+        text-align: center;
+    }
+    
 }
 
 @media screen and (min-width: 900px) {
     .button-container {
         width: 40%;
     }
+
     .app-title {
         font-size: 20rem;
     }
+
     .app-subtitle {
         font-size: 4.5rem;
     }
+
     .app-header {
         margin-top: -15rem;
         font-size: 2.5rem;
-      }
+    }
+
     .custom-btn {
         font-size: 2.5rem;
+    }
+
+    .card {
+        font-size: 2.2rem;
+    }
+
+    #client-form {
+        width: 50%;
+        font-size: 1.8rem;
     }
 
 }
 
 @media screen and (min-width: 1200px) {
-   
+
     .button-container {
         width: 30%;
     }
+
     .app-subtitle {
         font-size: 4rem;
     }
+
     .custom-btn {
         font-size: 2rem;
     }
-  
+
+    #client-form {
+        width: 40%;
+    }
 
 }
 
@@ -56,5 +90,5 @@ xl=1600 */
     .button-container {
         width: 25%;
     }
-    
+
 }

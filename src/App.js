@@ -7,20 +7,32 @@ import Dashboard from './pages/dashboard'
 import NotFound from './pages/notFound'
 import AddClient from './pages/addClient';
 import AllClients from './pages/allClients';
+import ClientPage from './pages/clientPage';
+import { useMemo, useState } from 'react';
+import InvestmentContext from './hooks/InvestmentContext';
+
 
 function App() {
+
+  const [refresh, setRefresh] = useState(false);
+  const providerValue= useMemo(() => ({refresh, setRefresh}), [refresh, setRefresh])
+
   return (
 
     <BrowserRouter>
       <div className='app'>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="add-client" element={<AddClient />} />
-          <Route path="all-clients" element={<AllClients />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <InvestmentContext.Provider value={providerValue}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="add-client" element={<AddClient />} />
+            <Route path="all-clients" element={<AllClients />} />
+            <Route path="clients/:id" element={<ClientPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </InvestmentContext.Provider>
+
       </div>
     </BrowserRouter>
 

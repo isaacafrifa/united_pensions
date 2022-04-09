@@ -1,0 +1,21 @@
+.modal {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#modal-close-button {
+    font-size: 1.8rem;
+    width: 10rem;
+}
+
+#contained-modal-title-vcenter {
+    font-size: larger;
+}
+
+p {
+    text-transform: none;
+}
+
+#interest {
+    font-weight: bold;
+}

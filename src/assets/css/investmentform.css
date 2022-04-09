@@ -1,0 +1,17 @@
+#investment-form {
+    margin-left: 1.5rem;
+    max-width: 85%;
+    text-align: center;
+}
+
+#interest_rate, #percent{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+ .form-error, #errorToast{
+    color: brown;
+}
+.form-error >p{
+    font-size: 1.5rem;
+}

@@ -17,15 +17,26 @@
   justify-content: center;
 }
 
-a:hover{
+.flex-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  /* center and flex wrap in row direction */
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a:hover {
   transition: all 0.3s ease;
   transform: scale(1.2);
 }
-
-/* .app_text {
-  opacity: 1;
-  transition: 0.1s all ease-in-out;
-} */
 
 .app-title {
   font-size: 10rem;
@@ -56,7 +67,7 @@ a:hover{
 }
 
 .custom-btn {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 1rem;
   border-radius: 2rem;
