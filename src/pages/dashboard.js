@@ -3,14 +3,17 @@ import '../assets/css/dashboard.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BASE_URL } from '../components/urls'
+import Preloader from "../components/preLoader";
 
 const Dashboard = () => {
     const [totalInvestments, setTotalInvestments] = useState(null)
     const [totalClients, setTotalClients] = useState(null)
+    const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState(null);
 
     // make multiple api calls to backend
     const getBackendData = () => {
+        setIsLoading(true)
         let endpoints = [
             `${BASE_URL}/clients/total`,
             `${BASE_URL}/investments/total`
@@ -22,6 +25,9 @@ const Dashboard = () => {
         }).catch(error => {
             console.log(error);
             setError(error);
+        }).then(function () {
+            // always executed
+                setIsLoading(false)     
         });
     }
 
@@ -39,6 +45,8 @@ const Dashboard = () => {
                     <div style={{ margin: "2rem" }}>
                         <p>Error: {error.message}</p>
                     </div>}
+
+                    {isLoading && (<Preloader />)}
 
                 <section className="flex-container">
                     {(totalClients >= 0) && (totalInvestments >= 0) && (
