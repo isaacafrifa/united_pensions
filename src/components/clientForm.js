@@ -8,11 +8,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/css/clientform.css'
 import axios from "axios";
-
+import { BASE_URL } from './urls'
 
 const ClientForm = () => {
     const [isLoading, setLoading] = useState(false);
-    const BACKEND_URL = "http://localhost:8080/api/v1"
+    const BACKEND_URL = BASE_URL
     const { register, handleSubmit,
         formState: { errors }, reset } = useForm();
 
