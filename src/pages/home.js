@@ -15,6 +15,7 @@ const Home = () => {
                     <p className='tagline'>more than just an investment</p>
                     <div className="button-container">
                         <Link to="dashboard" className="custom-btn custom-btn-primary">dashboard</Link>
+                        <Link to="dashboard" className="custom-btn custom-btn-primary">TEST_VARIABLE</Link>
                     </div>
                 </section>
             </div>
