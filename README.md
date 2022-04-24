@@ -11,16 +11,22 @@ This project is hosted on **Cloudflare**.
 
 ### Table of contents
 
-* General Info(#general-info)
-* Description(#description)
-* App Screenshot(#app-screenshot)
-* Technologies(#technologies)
-* Future Additions(#future-additions)
+* General Info
+* App Screenshot
+* Description
+* Technologies
+* Future Additions
+
 
 ## General Info
 
 This is a **hackathon project** that manages the investments of a madeup investment company. 
 Pardon some of the app's flaws, I had to cook this up in a very limited time.
+
+
+## Screenshot
+
+![App Screenshot](./app_screenshot.png)
 
 
 ## Description
@@ -42,10 +48,6 @@ The firm is in the business of collecting money from it's clients periodically, 
 + *develop an application that can be used to track the investment of Clients of Agyenkwa Investment Limited*
 + *the software should be able to tell the total principal amount of a client*
 + *the software should be able to tell the total interest accrued, and the total value of the investment at any particular day.*
-
-## Screenshot
-
-![App Screenshot](./app_screenshot.png)
 
 
 ## Technologies - Frontend
