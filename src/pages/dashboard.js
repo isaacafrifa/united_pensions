@@ -46,7 +46,7 @@ const Dashboard = () => {
                         <p>Error: {error.message}</p>
                     </div>}
 
-                    {isLoading && (<Preloader />)}
+                {isLoading && (<Preloader />)}
 
                 <section className="flex-container">
                     {(totalClients >= 0) && (totalInvestments >= 0) && (

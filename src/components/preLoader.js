@@ -1,5 +1,11 @@
+import '../assets/css/loader.css'
+
 const Preloader = () => {
-  return (<div>Loading</div>);
+  return (<>
+    <div className='loader-glistening-window'></div>
+  </>
+
+  );
 }
 
 export default Preloader;
