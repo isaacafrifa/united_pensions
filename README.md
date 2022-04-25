@@ -4,7 +4,7 @@ This project is the frontend of a full-stack web app for an investment company.
 
 ## Live Demo
 This project is hosted on **Cloudflare**.
-+ [Project Demo URL](iamupt.pages.dev)
++ [Project Demo URL](https://iamupt.pages.dev)
 
 ## General Info
 

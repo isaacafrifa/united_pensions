@@ -1,0 +1,17 @@
+.loader-glistening-window {
+    width: 0.6rem;
+    height: 0.6rem;
+    box-shadow: 1.70711rem 1.70711rem 0 1rem #2ecc71,
+        -1.70711rem 1.70711rem 0 1.17678rem #b28d3b,
+        -1.70711rem -1.70711rem 0 1.25rem #cc0001,
+        1.70711rem -1.70711rem 0 1.17678rem #f1c40f;
+    animation: gw 1s ease-in-out infinite,
+        rot 2.8s linear infinite;
+       transition: all 0.6s ease;
+}
+
+@keyframes rot {
+    to {
+        transform: rotate(360deg);
+    }
+}
