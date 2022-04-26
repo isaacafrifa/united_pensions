@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import InvestmentContext from "../hooks/InvestmentContext";
+import InvestmentContext from "../contexts/InvestmentContext";
 import Preloader from "./preLoader";
 import { BASE_URL } from "./urls";
 
@@ -11,19 +11,19 @@ const Totals = ({ clientId }) => {
     const [hasInvestments, setHasInvestments] = useState(false)
     const [isLoading, setIsLoading] = useState(true)
 
-
     // Get refresh from Context
     const { refresh, setRefresh } = useContext(InvestmentContext);
 
-    //use promise all axios call to refresh totals 
+    //use axios call to refresh totals 
     const getTotals = () => {
         let endpoints = [
             `${BASE_URL}/clients/${clientId}/total-principal`,
             `${BASE_URL}/clients/${clientId}/total-interest`
         ];
         // if one of our promises fails, the entire request fail
-        Promise.all(endpoints.map((endpoint) => axios.get(endpoint))).then(([{ data: totalPrincipal }, { data: totalInterest }]) => {
-
+        Promise.all(
+            endpoints.map((endpoint) => axios.get(endpoint)))
+            .then(([{ data: totalPrincipal }, { data: totalInterest }]) => {
             setTotalPrincipal(totalPrincipal)
             setTotalInterest(totalInterest)
             setHasInvestments(true)
@@ -35,8 +35,10 @@ const Totals = ({ clientId }) => {
             else {
                 setTotalsError(error)
             }
+        }).then(function () {
+            // always executed
+            setIsLoading(false)
         });
-        setIsLoading(false)
     }
 
     /* When 'Create New Investment' is clicked, setRefresh(from context) is set to true and then triggered here. 

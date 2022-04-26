@@ -7,7 +7,7 @@ import { useContext, useState } from 'react';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import { BASE_URL } from './urls';
 import axios from 'axios';
-import InvestmentContext from '../hooks/InvestmentContext';
+import InvestmentContext from '../contexts/InvestmentContext';
 
 const InvestmentForm = ({ clientProp }) => {
     const [isSending, setIsSending] = useState(false);
