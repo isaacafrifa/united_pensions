@@ -19,7 +19,12 @@ const Dashboard = () => {
             `${BASE_URL}/investments/total`
         ];
         // if one of our promises fails, the entire request fail
-        Promise.all(endpoints.map((endpoint) => axios.get(endpoint))).then(([{ data: clients }, { data: investments }]) => {
+        Promise.all(
+            endpoints.map(
+                (endpoint) => axios.get(endpoint)
+            )
+        ).then(
+            ([{ data: clients }, { data: investments }]) => {
             setTotalClients(clients)
             setTotalInvestments(investments)
         }).catch(error => {
@@ -27,7 +32,7 @@ const Dashboard = () => {
             setError(error);
         }).then(function () {
             // always executed
-                setIsLoading(false)     
+            setIsLoading(false)
         });
     }
 
