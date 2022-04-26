@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { Col, Row, Table } from "react-bootstrap";
 import { DatatableWrapper, Filter, Pagination, PaginationOptions, TableBody, TableHeader } from "react-bs-datatable";
-import InvestmentContext from "../hooks/InvestmentContext";
+import InvestmentContext from "../contexts/InvestmentContext";
 import '../assets/css/datatable.css'
 
 import Preloader from "./preLoader";

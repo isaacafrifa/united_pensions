@@ -9,7 +9,7 @@ import AddClient from './pages/addClient';
 import AllClients from './pages/allClients';
 import ClientPage from './pages/clientPage';
 import { useMemo, useState } from 'react';
-import InvestmentContext from './hooks/InvestmentContext';
+import InvestmentContext from './contexts/InvestmentContext';
 
 
 function App() {
